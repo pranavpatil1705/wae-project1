@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Task App</title>
+</head>
+ <style>
+    *{
+        margin:0%;
+        padding: 0%;
+    }
+    html{
+        height: 100vh;
+    }
+    table{
+        width: 400px;
+    }
+    table,tr,td{
+        border : 1px solid#000000;
+    }
+    #add-task{
+        background-color: aqua;
+        color: #fff;
+        border-right:50px;
+        padding: 20px
+    }
+    .box{
+        display:flex;
+        margin:10px;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        justify-self: center;
+    }
+    .table-box{
+        height:100vh;
+    }
+    
+
+ </style>
+<body>
+
+    <div class="box task-box ">
+        <input name="task-name " id="task-name" placeholder="New task">
+        <button id="add-task">Add Task</button></div>
+        <div class="box table-box">
+        <table> 
+           
+            
+            <tr>
+                <th>Task Name</th>
+                <th>Done</th>
+                <th>Delete</th>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+        </table>
+        </div>
+   
+    </input>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+   let button = document.getElementById("add-task")
+   button.addEventListener("click",function(){
+    localStorage.setItem("task","fujdrtjkedtjn")
+   })
+</script>
+
+
+</body>
+
+</html>
